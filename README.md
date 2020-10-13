@@ -23,3 +23,5 @@ Finally, load the remaining required modules
 sudo cp ~/matrixio-kernel-modules/misc/matrixio.conf /etc/modules-load.d/
 sudo cp ~/matrixio-kernel-modules/misc/asound.conf /etc/
 sudo reboot
+
+https://matrix-io.github.io/matrix-documentation/matrix-lite/py-reference/alsa-mics/
