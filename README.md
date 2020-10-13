@@ -9,7 +9,7 @@ Start up the RPi and it will have ssh enabled and have the proper wifi settings.
 
 nmap -sP 192.168.178.0/24 will give you a list of IP addresses, try to ssh to it using pi:raspberry
 
-#Passwordless SSH towards RPi
+# Passwordless SSH towards RPi
 ssh-copy-id pi@<ip address>
 
 # Matrix
