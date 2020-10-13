@@ -22,6 +22,7 @@ Add in /boot/config.txt:
 dtoverlay=matrixio
 Finally, load the remaining required modules
 
+sudo apt install python3 python3-dev python3-pip -y
 sudo cp ~/matrixio-kernel-modules/misc/matrixio.conf /etc/modules-load.d/
 sudo cp ~/matrixio-kernel-modules/misc/asound.conf /etc/
 sudo reboot
