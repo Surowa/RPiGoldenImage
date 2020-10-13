@@ -11,7 +11,7 @@ nmap -sP 192.168.178.0/24 will give you a list of IP addresses, try to ssh to it
 
 
 # Matrix
-curl https://apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -; echo "deb https://apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list; sudo apt-get update;sudo apt-get upgrade; sudo apt install matrixio-creator-init -y; sudo apt-get -y install raspberrypi-kernel-headers raspberrypi-kernel git; sudo reboot
+curl https://apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -; echo "deb https://apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list; sudo apt-get update;sudo apt-get upgrade -y; sudo apt install matrixio-creator-init -y; sudo apt-get -y install raspberrypi-kernel-headers raspberrypi-kernel git; sudo reboot
 
 git clone https://github.com/matrix-io/matrixio-kernel-modules; cd matrixio-kernel-modules/src && make && make install
 
