@@ -18,3 +18,6 @@ Follow "option 1" and IGNORE the unknown PCM" errors
 
 # VNC
 sudo raspi-config --> Interfacing options --> VNC --> Enable
+sudo apt-get install lxsession -y
+Boot Options->Desktop / ClI-> Desktop Autologin
+Advanced options --> Resolution --> 1080p
