@@ -13,6 +13,8 @@ nmap -sP 192.168.178.0/24 will give you a list of IP addresses, try to ssh to it
 ssh-copy-id pi@<ip address>
 
 # Matrix
-
-
 https://matrix-io.github.io/matrix-documentation/matrix-lite/py-reference/alsa-mics/
+Follow "option 1" and IGNORE the unknown PCM" errors
+
+# VNC
+sudo raspi-config --> Interfacing options --> VNC --> Enable
