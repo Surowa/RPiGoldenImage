@@ -23,5 +23,6 @@ Boot Options->Desktop / ClI-> Desktop Autologin
 Advanced options --> Resolution --> 1080p
 
 # Spotify
-sudo apt install snapd -y #Install snap
-snap install spotify
+sudo apt install snapd -y && snap install spotify #Install snap, then Spotify
+
+
