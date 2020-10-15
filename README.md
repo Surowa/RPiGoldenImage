@@ -25,4 +25,6 @@ Advanced options --> Resolution --> 1080p
 # Spotify
 sudo apt install snapd -y && snap install spotify #Install snap, then Spotify
 
+OR
 
+https://pimylifeup.com/raspberry-pi-spotify/
