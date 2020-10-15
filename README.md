@@ -21,3 +21,7 @@ sudo raspi-config --> Interfacing options --> VNC --> Enable
 sudo apt-get install lxsession -y
 Boot Options->Desktop / ClI-> Desktop Autologin
 Advanced options --> Resolution --> 1080p
+
+# Spotify
+sudo apt install snapd -y #Install snap
+snap install spotify
