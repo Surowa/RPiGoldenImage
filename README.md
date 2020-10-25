@@ -33,3 +33,10 @@ https://pimylifeup.com/raspberry-pi-spotify/
 https://hub.docker.com/r/superrobertwa/redfordspeech
 
 
+# Pi-Hole
+
+sudo docker pull pihole/pihole:latest
+sudo docker run pihole/pihole:latest -it
+sudo docker ps
+sudo docker exec -it <container id> bash
+sudo pihole -a -p
