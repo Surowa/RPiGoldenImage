@@ -28,3 +28,8 @@ sudo apt install snapd -y && snap install spotify #Install snap, then Spotify
 OR
 
 https://pimylifeup.com/raspberry-pi-spotify/
+
+# Speech 
+https://hub.docker.com/r/superrobertwa/redfordspeech
+
+
