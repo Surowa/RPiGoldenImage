@@ -40,3 +40,9 @@ sudo docker run pihole/pihole:latest -it
 sudo docker ps
 sudo docker exec -it <container id> bash
 sudo pihole -a -p
+
+# HTTPS e.g. for pi-hole or pilight
+sudo apt install snapd -y && sudo snap install core; sudo snap refresh core
+sudo snap install --classic certbot && sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot certonly --webroot
+
