@@ -31,7 +31,8 @@ https://pimylifeup.com/raspberry-pi-spotify/
 
 # Speech 
 https://hub.docker.com/r/superrobertwa/redfordspeech
-
+sudo docker pull superrobertwa/redfordspeech:latest
+sudo docker run -it -p 8888:80 redfordspeech
 
 # Pi-Hole
 
@@ -42,7 +43,5 @@ sudo docker exec -it <container id> bash
 sudo pihole -a -p
 
 # HTTPS e.g. for pi-hole or pilight
-sudo apt install snapd -y && sudo snap install core; sudo snap refresh core
-sudo snap install --classic certbot && sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo certbot certonly --webroot
+https://github.com/texadactyl/diyca/blob/master/docs/preparation_notes.txt
 
