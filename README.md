@@ -14,7 +14,7 @@ ssh-copy-id pi@<ip address>
 
 # Matrix
 https://matrix-io.github.io/matrix-documentation/matrix-lite/py-reference/alsa-mics/
-Follow "option 1" and IGNORE the unknown PCM" errors
+Follow "option 1" TO THE LETTER (don't do any other things) and IGNORE the unknown PCM" errors
 
 # VNC
 sudo raspi-config --> Interfacing options --> VNC --> Enable
@@ -22,11 +22,23 @@ sudo apt-get install lxsession -y
 Boot Options->Desktop / ClI-> Desktop Autologin
 Advanced options --> Resolution --> 1080p
 
+# Shared folder
+https://www.raspberrypi.org/documentation/remote-access/samba.md
+aka:
+sudo apt update
+sudo apt install samba samba-common-bin smbclient cifs-utils -y
+cd && mkdir shared
+sudo nano /etc/samba/smb.conf
+
+Add:
+
+[share]
+    path = /home/pi/shared
+    read only = no
+    public = yes
+    writable = yes
+
 # Spotify
-sudo apt install snapd -y && snap install spotify #Install snap, then Spotify
-
-OR
-
 https://pimylifeup.com/raspberry-pi-spotify/
 
 # Speech 
