@@ -9,6 +9,13 @@ Start up the RPi and it will have ssh enabled and have the proper wifi settings.
 
 nmap -sP 192.168.178.0/24 will give you a list of IP addresses, try to ssh to it using pi:raspberry
 
+# Ansible
+Install Ansible using:
+
+sudo apt install ansible -y
+sudo ansible-galaxy collection install community.general
+git clone <redford-ansible>
+
 # Passwordless SSH towards RPi
 ssh-copy-id pi@<ip address>
 
