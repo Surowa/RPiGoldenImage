@@ -13,9 +13,18 @@ nmap -sP 192.168.178.0/24 will give you a list of IP addresses, try to ssh to it
 ssh-copy-id pi@<ip address>
 
 # Matrix
+Remotely apply matrix.yml
+
+Manually:
+
 https://matrix-io.github.io/matrix-documentation/matrix-lite/py-reference/alsa-mics/
 Follow "option 1" TO THE LETTER (don't do any other things) and IGNORE the unknown PCM" errors
 Add the device id as well as mentioned here by Samreen: https://community.matrix.one/t/raspberry-pi4-buster-alsa-mics-not-working/2865/5
+
+# Pilight:
+Remotely apply redfordcam.yml
+
+
 
 # VNC
 sudo raspi-config --> Interfacing options --> VNC --> Enable
